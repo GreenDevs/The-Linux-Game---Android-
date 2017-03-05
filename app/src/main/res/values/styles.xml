@@ -10,11 +10,11 @@
 
     <style name="LinearLayout" />
 
-    <style name="LinearLayout.GuillotineItem">
+    <style name="LinearLayout.thelinuxgameItem">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">horizontal</item>
-        <item name="android:layout_marginTop">@dimen/guillotine_small_margin</item>
+        <item name="android:layout_marginTop">@dimen/thelinuxgame_small_margin</item>
     </style>
 
     <style name="TextView" />
@@ -26,17 +26,17 @@
         <item name="android:layout_height">wrap_content</item>
     </style>
 
-    <style name="TextView.GuillotineItem">
+    <style name="TextView.thelinuxgameItem">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginLeft">@dimen/guillotine_small_margin</item>
-        <item name="android:textSize">@dimen/guillotine_item_text_size</item>
+        <item name="android:layout_marginLeft">@dimen/thelinuxgame_small_margin</item>
+        <item name="android:textSize">@dimen/thelinuxgame_item_text_size</item>
         <item name="android:layout_gravity">center_vertical</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@android:color/white</item>
     </style>
 
-    <style name="TextView.GuillotineItem.Selected">
+    <style name="TextView.thelinuxgameItem.Selected">
         <item name="android:textColor">@color/selected_item_color</item>
     </style>
 
@@ -45,7 +45,7 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:minHeight">?attr/actionBarSize</item>
         <item name="android:windowNoTitle">true</item>
-        <item name="android:background">@color/guillotine_background</item>
+        <item name="android:background">@color/thelinuxgame_background_dark</item>
     </style>
 
     <style name="ImageView" />
@@ -61,11 +61,11 @@
         <item name="android:layout_marginBottom">@dimen/abc_action_bar_overflow_padding_start_material</item>
     </style>
 
-    <style name="ImageView.GuillotineItem">
+    <style name="ImageView.thelinuxgameItem">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center_vertical</item>
-        <item name="android:layout_marginLeft">@dimen/guillotine_large_margin</item>
+        <item name="android:layout_marginLeft">@dimen/thelinuxgame_large_margin</item>
     </style>
 
 </resources>

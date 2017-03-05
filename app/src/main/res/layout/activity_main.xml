@@ -4,14 +4,14 @@
              android:id="@+id/root"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             android:background="@color/guillotine_background_dark"
+             android:background="@color/thelinuxgame_background_dark"
              android:orientation="vertical">
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="@dimen/guillotine_actionbar_background_view_height"
+        android:layout_height="@dimen/thelinuxgame_actionbar_background_view_height"
         android:layout_gravity="top"
-        android:background="@color/guillotine_background"
+        android:background="@color/thelinuxgame_background"
         />
 
     <LinearLayout
@@ -26,11 +26,13 @@
 
             <ImageView
                 android:id="@+id/content_hamburger"
-                style="@style/ImageView.Hamburger"
-                android:scaleX="0.5"
-                android:scaleY="0.5"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:padding="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
                 android:src="@drawable/ic_menu_90"/>
-
+            <!--android:text="Linux Game"-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -38,25 +40,17 @@
                 android:text="Linux Game"
                 android:textAllCaps="true"
                 android:textColor="@android:color/white"
-                android:textSize="@dimen/guillotine_item_text_size"
+                android:textSize="@dimen/thelinuxgame_item_text_size"
                 android:textStyle="bold"/>
         </android.support.v7.widget.Toolbar>
-
-        <RelativeLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:id="@+id/activity_main"
+        <include layout="@layout/game_score"
+            android:layout_height="128dp"
+            android:layout_width="match_parent"/>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:context="com.a5idiot.linuxgame.MainActivity">
-
-            <android.support.v4.view.ViewPager
-                android:id="@+id/viewPager"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="64dp"/>
-        </RelativeLayout>
-
+            android:layout_height="wrap_content"
+            />
 
     </LinearLayout>
 </FrameLayout>

@@ -49,11 +49,15 @@ public class ViewPagerFragment extends Fragment {
 
     private void initLayout ( View rootView ) {
         view = (TextView) rootView.findViewById ( R.id.textView );
-        if (position % 2 == 0) {
-            view.setBackgroundColor ( Color.RED );
+        if (position % 3 == 0) {
+            view.setBackgroundColor ( Color.parseColor ( "#FF4081" ) );
+        }
+        else if (position % 3 == 1) {
+            view.setBackgroundColor ( Color.parseColor ( "#FDD835" ) );
+
         }
         else {
-            view.setBackgroundColor ( Color.BLUE );
+            view.setBackgroundColor ( Color.parseColor ( "#008080" ) );
 
         }
     }
@@ -62,6 +66,6 @@ public class ViewPagerFragment extends Fragment {
 
         rootView.setScaleY ( scale );
         rootView.setScaleX ( scale );
-       rootView.invalidate ();
+        rootView.invalidate ();
     }
 }
