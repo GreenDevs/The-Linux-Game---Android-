@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Linux Game</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="profile">PROFILE</string>
+    <string name="feed">LEARN</string>
+    <string name="activity">PLAY</string>
+    <string name="settings">MASTER</string>
+</resources>
