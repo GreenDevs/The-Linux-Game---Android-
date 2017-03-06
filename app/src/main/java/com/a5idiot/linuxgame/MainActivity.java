@@ -18,6 +18,7 @@ import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.LinearInterpolator;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.a5idiot.linuxgame.fragments.LinuxPagerAdapter;
@@ -72,6 +73,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
         pager = (ViewPager) findViewById ( R.id.viewPager );
+        LinearLayout linearLayout = (LinearLayout)pager.getParent ();
+        registerSwipe ( linearLayout );
         registerSwipe ( pager );
         adapter = new LinuxPagerAdapter ( getSupportFragmentManager () );
         setPager ();
@@ -83,7 +86,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void setPager ( ) {
         pager.setClipToPadding ( false );
         pager.setPageMargin ( -64 );
-        pager.setPadding ( 200, 0, 200, 32 );
+        pager.setPadding ( 200, 32, 200, 32 );
         pager.setOffscreenPageLimit ( 6 );
         pager.addOnPageChangeListener ( new ViewPager.OnPageChangeListener () {
 
@@ -174,7 +177,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                 //DO Previous
                                 //Toast.makeText ( getApplicationContext (),"swipte down",Toast.LENGTH_LONG ).show ();
 
-                                if(rootView instanceof ViewPager){
+                                if(rootView instanceof ViewPager||rootView instanceof LinearLayout){
                                     animation.open ();
                                 }
                             }

@@ -7,7 +7,7 @@
     <dimen name="thelinuxgame_large_margin">100dp</dimen>
     <dimen name="thelinuxgame_divider_height">40dp</dimen>
 
-    <dimen name="thelinuxgame_item_text_size">20sp</dimen>
+    <dimen name="thelinuxgame_item_text_size">24sp</dimen>
     <dimen name="thelinuxgame_actionbar_background_view_height">35dp</dimen>
 
 </resources>
